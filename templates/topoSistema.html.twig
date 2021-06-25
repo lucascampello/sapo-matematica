@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %} 
+            <link rel="stylesheet" href="{{ asset('/assets/css/inicial.css') }}"> 
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="topo">
+            <div id="logo"><img src="{{ asset('/assets/imagens/logo.png')}}"></div>
+            <div id="menu">
+                <ul>
+                    {% if id != "sistema" %}
+                    <li>
+                        <a href="{{ path('app_sistema_inicial')}}">Tela Inicial</a>
+                    </li>
+                    {% endif %}
+                    {% if id != "inicial_questionario" %}
+                        <li><a href="{{ path('app_sistema_questionario')}}">Questionario</a></li>
+                    {% endif %}
+                    <li><a href="{{ path('app_sistema_inicial')}}">Contato</a></li>
+                    <li><a href="{{ path('app_sistema_sair')}}">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <br clear="both"/>
+        <div id="conteudo">
+            <h1> {{ titulo }} </h1>
+            <div id="esquerdo">
+                {% block esquerdo %}
+                {% endblock %}
+            </div>
+            <div id="direito">
+                {% block direito %}
+                {% endblock %}
+            </div>
+            <br clear="both"/>
+        </div>
+        <br clear="both"/>
+        <div id="rodape">
+            Texto do Copyright
+        </div>
+
+        {% block body %}
+        {% endblock %}
+        </div>
+    </body>
+</html>

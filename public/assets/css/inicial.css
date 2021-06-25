@@ -1,0 +1,87 @@
+body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#topo {
+    margin: 10px;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    float: right;
+    margin: 10px 5px 30px;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+#menu ul li { 
+    display: inline; 
+}
+
+#menu ul li a {
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #000;
+}
+
+#conteudo {
+    width: 96%;
+    margin: 0 auto;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#conteudo h1 {
+    
+}
+
+#esquerdo {
+    border: 1px solid #000;
+    float: left;
+    width: 71%;
+    margin: 3px;
+    padding: 5px;
+}
+
+#direito {
+    border: 1px solid #000;
+    float: right;
+    width: 25%;
+    margin: 3px;
+    padding: 5px;
+}
+
+legend label {
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+legend p {
+    text-align: justify;
+}
+
+legend a {
+    
+}
