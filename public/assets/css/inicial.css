@@ -10,6 +10,7 @@ body {
 
 #logo {
     float: left;
+    padding: 10px 0px 5px 20px;
 }
 
 #menu {
@@ -20,7 +21,6 @@ body {
 #menu ul {
     padding:0px;
     margin:0px;
-    background-color:#EDEDED;
     list-style:none;
 }
 
@@ -34,15 +34,15 @@ body {
     display: inline-block;
 
     /* visual do link */
-    background-color:#EDEDED;
+    background-color:#FFF;
     color: #444;
     text-decoration: none;
     font-weight: bold;
 }
 
 #menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #000;
+    background-color:#444;
+    color: #efefef;
 }
 
 #conteudo {
@@ -58,17 +58,15 @@ body {
 }
 
 #esquerdo {
-    border: 1px solid #000;
     float: left;
-    width: 71%;
+    width: 66%;
     margin: 3px;
-    padding: 5px;
+    margin-top: 8px;
 }
 
 #direito {
-    border: 1px solid #000;
     float: right;
-    width: 25%;
+    width: 30%;
     margin: 3px;
     padding: 5px;
 }
@@ -84,4 +82,44 @@ legend p {
 
 legend a {
     
+}
+
+#erro p{
+    padding: 5px;
+    text-align: center;
+    color: #600;
+    width: 100%;
+    font-weight: bold;
+    border: 1 px solid #A33;
+    color: #400;
+}
+
+#rodape {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+#direito video {
+    width: 100%;
+}
+
+#linha_esquerda {
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#coluna_esquerda {
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 47%;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    float: left;
 }

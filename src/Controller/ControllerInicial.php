@@ -30,8 +30,8 @@ class ControllerInicial extends AbstractController{
     {
         $erro = "";
         $form = $this->createFormBuilder()
-            ->add('email', TextType::class, ["label"=>"E-mail"])
-            ->add('pwd', PasswordType::class, ["label" => "Senha"])
+            ->add('email', TextType::class, ["label"=>"E-mail",  'attr' => array ( 'name' => 'email')])
+            ->add('pwd', PasswordType::class, ["label" => "Senha", 'attr' => array ( 'name' => 'pwd')])
             ->getForm();
 
         $form->handleRequest($request);

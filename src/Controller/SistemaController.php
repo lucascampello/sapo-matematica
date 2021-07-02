@@ -24,7 +24,7 @@ class SistemaController extends AbstractController {
 //            $this->sairSistema();
 //        else if(empty($professorSessao->id))
 //            $this->sairSistema();
-        dump($this->professorSessao);
+        //dump($this->professorSessao);
     }
 
     /**

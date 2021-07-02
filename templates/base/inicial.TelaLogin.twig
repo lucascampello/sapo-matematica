@@ -1,25 +1,24 @@
 {% extends "topoInicial.html.twig" %}
 {% block title %}Sapo - Matemática :: Login{% endblock %}
 {% block esquerdo %}
-    <legend id="esquerdo"> 
-        <label>Professor</label>
+    <div id="coluna_esquerda">
+        <h3>Professor</h3>
         <p>Acessar utilizando o login fornecido pelo sistema SAPO.</p>
         {{ form_start(form) }}
             {{ form_widget(form) }}
 
             <input type="submit"/>
         {{ form_end(form) }}    
-    </legend>
-    <legend id="direito"> 
-        <label>Aluno</label>
+    </div>
+    <div id="coluna_esquerda">
+        <h3>Aluno</h3>
         <p>O acesso do aluno deve ser realizado com o login do Google Education fornecido pela secretaria de educação do estado do Rio Grande do Sul.</p>
         <p>Mesmo login utilizado para acesso ao Google Classroom</p>
         <center><a href=""><img src="{{ asset('/assets/imagens/logar_google.png') }}"></a></center>
-    </legend>
-
+    </div>
 {% endblock %}
-{% block direito %}
+{% block erro %}
         {% if erro != "" %}
-            <b>{{ erro }}</b>
+            <p>{{ erro }}</p>
         {% endif %}
 {% endblock %}

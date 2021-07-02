@@ -1,4 +1,30 @@
 {% extends "topoInicial.html.twig" %}
 {% block title %}Sapo - Matemática{% endblock %}
-{% block esquerdo %} ESQUERDO {% endblock %}
-{% block direito %} DIREITO {% endblock %}
+{% block esquerdo %} 
+    <div id="linha_esquerda">
+        <p>Seja bem vindo ao SAPO - Matemática, um jeito fácil e divertido de aprender Matemática.</p>
+        <p>Resolva os questionários, acerte as questões e ganhe novos itens para customizar seu personagem.</p>
+    </div>
+    <br clear="all"/>
+    <div id="linha_esquerda">
+        <h3> Versão 0.2 - 02 de Julho de 2021</h3>
+            <ol>
+                <li> Re-estruturação interna do layout do sistema;</li>
+                <li> Adição do calendário e vídeo inicial na coluna da direita;</li>
+                <li> Retirado valores de debug apresentados ao usuário na versão 0.1.</li>
+                <li> Testes automatizados End to End (e2e) de autenticação do professor usando Panther;</li>
+                <li> Atualização do projeto no <a href="https://github.com/lucascampello/sapo-matematica">github</a>.</li>
+            </ol>
+        <h3> Versão 0.1 - 25 de Junho de 2021</h3>
+            <ol>
+                <li> Criação do projeto base usando Symfony;</li>
+                <li> Criação das entidades (Entity) Professor e Questionário </li>
+                <li> Criação da base de dados em PostgreSQL com o plugin Doctrine;  </li>
+                <li> Criação do modelo Objeto Relacional a partir das entidades criadas;</li>
+                <li> Criação dos formulários usando o plugin Forms; </li>
+                <li> Criado repositório <a href="https://github.com/lucascampello/sapo-matematica">github</a>.</li>
+            </ol>
+    </div>
+
+{% endblock %}
+{% block direito %}  {% endblock %}
