@@ -1,0 +1,17 @@
+{% extends "topoSistema.html.twig" %}
+{% block title %}Sapo - Matemática || SISTEMA {% endblock %}
+{% block esquerdo %} 
+    <a href="{{ path('app_questionario_insert')}}">
+        <img src="{{ asset('/assets/imagens/logo_insert_questionario.png')}}" alt="Inserir Questionário" title="Inserir Questionário">
+    </a>
+    <a href="{{ path('app_questionario_menu')}}">
+            <img src="{{ asset('/assets/imagens/logo_edit_questionario.png')}}" alt="Editar Questionário" title="Editar Questionário">
+    </a>
+    <a href="{{ path('app_questao_insert')}}">
+                <img src="{{ asset('/assets/imagens/logo_insert_questao.png')}}" alt="Inserir Questão" title="Inserir Questão">
+    </a>
+    <a href="{{ path('app_questionario_menu')}}">
+                <img src="{{ asset('/assets/imagens/logo_edit_questao.png')}}" alt="Editar Questão" title="Editar Questão">
+    </a>
+{% endblock %}
+{% block direito %} DIREITO {% endblock %}
